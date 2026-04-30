@@ -1,5 +1,8 @@
 package com.example.project;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Wardrobe {
 
     public Wardrobe(int totalLength) {
@@ -8,6 +11,8 @@ public class Wardrobe {
             throw new IllegalArgumentException("Wardobe is longer than wall");
         }
     }
-    
+    public List<List<Integer>> getCombinations() {
+        return new ArrayList<>();
+    }
 
 }
