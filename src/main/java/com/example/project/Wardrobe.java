@@ -11,7 +11,7 @@ public class Wardrobe {
             throw new IllegalArgumentException("Wardobe is longer than wall");
         }
     }
-    public List<List<Integer>> getCombinations() {
+    public List<List<Integer>> getValidElementCombinations() {
         return new ArrayList<>();
     }
 

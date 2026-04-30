@@ -19,7 +19,7 @@ class WardrobeTest {
     @Test
     void testElementsSumTo250() {
         Wardrobe wardrobe = new Wardrobe(250);
-        var combinations = wardrobe.getCombinations();
+        var combinations = wardrobe.getValidElementCombinations();
     };
         
 }
