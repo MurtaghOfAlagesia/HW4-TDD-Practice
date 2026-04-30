@@ -7,7 +7,7 @@ public class Wardrobe {
         if (totalLength > wallSize) {
             throw new IllegalArgumentException("Wardobe is longer than wall");
         }
-    
     }
+    
 
 }
