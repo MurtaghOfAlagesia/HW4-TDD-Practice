@@ -21,6 +21,12 @@ class WardrobeTest {
         Wardrobe wardrobe = new Wardrobe(250);
         var combinations = wardrobe.getValidElementCombinations();
     };
-        
+
+    @Test
+    void testNonEmptyCombinationsFor250() {
+    Wardrobe wardrobe = new Wardrobe(250);
+    var combinations = wardrobe.getValidElementCombinations();
+    assertFalse(combinations.isEmpty());
+    }
 }
 
