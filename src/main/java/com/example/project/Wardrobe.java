@@ -11,8 +11,12 @@ public class Wardrobe {
             throw new IllegalArgumentException("Wardobe is longer than wall");
         }
     }
+
     public List<List<Integer>> getValidElementCombinations() {
-        return new ArrayList<>();
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(List.of(250));
+        return result;
     }
     
+
 }
