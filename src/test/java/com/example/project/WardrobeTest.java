@@ -7,24 +7,25 @@ import org.junit.jupiter.api.Disabled;
 
 class WardrobeTest {
 
-    @Disabled
     @Test
-    void testWardrobeLargerThan250ThrowsException() {
+    void testWardrobeLargerThanWallThrowsException() {
         assertThrows(IllegalArgumentException.class, 
             () -> {new Wardrobe(300); },
             "Wardrobe too large for wall does not raise exception");
         };
 
-    @Disabled
     @Test
-    void testElementsSumTo250() {
+    void testElementsSumToWallLength() {
         Wardrobe wardrobe = new Wardrobe(250);
         var combinations = wardrobe.getValidElementCombinations();
-    };
+        for (var combo : combinations) {
+        int sum = combo.stream().mapToInt(Integer::intValue).sum();
+        assertEquals(250, sum);
+        };
+    }
 
-    @Disabled
     @Test
-    void testNonEmptyCombinationsFor250() {
+    void testNonEmptyCombinations() {
     Wardrobe wardrobe = new Wardrobe(250);
     var combinations = wardrobe.getValidElementCombinations();
     }
